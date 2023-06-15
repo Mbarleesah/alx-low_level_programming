@@ -1,2 +1,2 @@
 #!/bin/bash
-$ g++ -S -masm=intel $CFILE && mv $CFILE.s ${CFILE%.*}.s
+$ export CFILE=main.c ; gcc -S -masm=intel $CFILE && ./100-intel
